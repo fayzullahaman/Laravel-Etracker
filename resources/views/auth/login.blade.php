@@ -15,8 +15,8 @@
 <body>
     <div class="form-bg">
         <div class="container mt-5">
-            <div class="row">
-                <div class="col-md-offset-4 col-md-4 ">
+            <div class="row justify-content-center">
+                <div class="col-md-4">
                     <div class="form-container">
                         <div class="form-icon"><i class="fa fa-user"></i></div>
                         <h3 class="title">Admin Login</h3>
