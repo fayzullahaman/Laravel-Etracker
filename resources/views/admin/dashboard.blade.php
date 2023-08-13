@@ -485,6 +485,15 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="col-xl-12 col-lg-12 col-sm-12 col-xxl-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title mb-0">Analog Clock</h4>
+                            @include('admin.user.clock_chart')
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="row">
                 <div class="col-lg-3 col-sm-6">
