@@ -5,6 +5,22 @@
 
         <div class="container-fluid mt-3">
             <div class="row">
+                <div class="col-lg-6 col-md-12">
+                    <div class="card">
+                        <div class="card-body">
+                            Time Zone: {{ \Carbon\Carbon::now()->timezone }}
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="card">
+                        <div class="card-body">
+                            Date Time: {{ \Carbon\Carbon::now()->format('l jS F Y') }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
                 <div class="col-lg-3 col-sm-6">
                     <div class="card gradient-1">
                         <div class="card-body">
@@ -110,7 +126,6 @@
                             <div id="morris-bar-chart"></div>
                         </div>
                     </div>
-
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="card card-widget">
@@ -490,7 +505,7 @@
                     <div class="card">
                         <div class="card-body">
                             <h4 class="card-title mb-0">Analog Clock</h4>
-                            @include('admin.user.clock_chart')
+                            @include('admin.dashboard.clock_chart')
                         </div>
                     </div>
                 </div>
