@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Models\User;
 use Illuminate\Http\Request;
+use Spatie\Permission\Models\Role;
 use Yajra\DataTables\Facades\DataTables;
 
 class UserController extends Controller
@@ -39,7 +40,8 @@ class UserController extends Controller
      */
     public function create()
     {
-        //
+        $roles = Role::pluck('name','name')->all();
+        return view('admin.user.create',compact('roles'));
     }
 
     /**
